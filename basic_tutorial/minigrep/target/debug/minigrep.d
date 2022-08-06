@@ -1,0 +1,1 @@
+/Users/frankfury/Coding/Rust/basic_tutorial/minigrep/target/debug/minigrep: /Users/frankfury/Coding/Rust/basic_tutorial/minigrep/src/lib.rs /Users/frankfury/Coding/Rust/basic_tutorial/minigrep/src/main.rs

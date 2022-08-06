@@ -1,0 +1,1 @@
+/Users/frankfury/Coding/Rust/basic_tutorial/add/target/debug/adder: /Users/frankfury/Coding/Rust/basic_tutorial/add/add-one/src/lib.rs /Users/frankfury/Coding/Rust/basic_tutorial/add/add-two/src/lib.rs /Users/frankfury/Coding/Rust/basic_tutorial/add/adder/src/main.rs

@@ -1,0 +1,1 @@
+/Users/frankfury/Coding/Rust/basic_tutorial/own_project/target/debug/libown_project.rlib: /Users/frankfury/Coding/Rust/basic_tutorial/own_project/src/frontend.rs /Users/frankfury/Coding/Rust/basic_tutorial/own_project/src/lib.rs
