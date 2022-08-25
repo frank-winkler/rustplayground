@@ -1,13 +1,11 @@
-use crate::utils::array as custom_array;
-
 #[derive(Debug)]
-pub struct Dish {
-    name : String,
+pub struct Dish<'a> {
+    name : &'a str,
 }
-impl Dish {
-    pub fn new(name: String) -> Self {
+impl Dish<'static> {
+    pub fn new(name: &'static str) -> Self {
         Dish {
-            name : name
+            name
         }
     }
 
@@ -17,12 +15,16 @@ impl Dish {
 }
 
 #[derive(Debug, PartialEq, Eq)]
-enum IngredientState {
+pub enum IngredientState {
     Raw(),
     Cut(i32),
     Sliced(i32),
     Cubed(i32),
     Fried(i16),
+}
+
+pub trait Stateful {
+    
 }
 // Define cooking preparation activities
 pub trait Slicing {
@@ -75,9 +77,24 @@ impl Frying for Ingredient {
 impl Ingredient {
     pub fn new(name: String) -> Self {
         Ingredient {
-            name: name,
+            name,
             state: vec![IngredientState::Raw()]
         }
     }
 }
 
+fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    
+    #[test]
+    fn test_add() {
+        assert_eq!(add(1,2),3)
+    }
+
+}
