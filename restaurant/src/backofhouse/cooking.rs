@@ -50,6 +50,7 @@ pub struct Ingredient {
     state: Vec<IngredientState>
 }
 impl PartialEq for Ingredient {
+    
     fn eq(&self, other: &Ingredient) -> bool {
         self.name == other.name
     }
